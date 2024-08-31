@@ -1,60 +1,65 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,300&display=swap');
 
 body {
-    display: flex;
-    flex-direction: column;
     margin: 0;
     padding: 0;
-    font-family: Roboto, sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3, h4, p {
+    margin: 0;
 }
 
 header {
     display: flex;
-    justify-content: ;
     align-items: center;
-    margin: 0;
-    padding: 8px 200px;
+    padding: 8px 250px;
     background-color: #121820;
 }
 
-.section {
-    padding: 50px 200px;
+header img {
+    font-size: 24px;
+    color: #F9FaF8;
+    padding: 10px 0 0 0;
 }
 
-.hero.section {
+nav {
+    margin-left: auto;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #F9FaF8;
+}
+
+nav ul li a:hover {
+    color: #3882F6;
+}
+
+.hero-section {
+    background-image: url(kevin.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     gap: 20px;
+    padding: 140px 250px;
     background-color: #1F2937;
+    background-blend-mode: overlay;
 }
 
 .hero-text {
     display: flex;
-    gap: 20px;
     flex-direction: column;
-}
-
-a {
-    list-style-type: none;
-    text-decoration: none;
-    font-size: 18px;
-    color: #F9FaF8;
-
-}
-
-ul {
-    display: flex;
-    padding: 0;
     gap: 20px;
-    list-style: none;
-    margin-left: auto;
 }
-
-img {
-    font-size: 24px;
-    color: #F9FaF8;
-}
-
-
 
 .hero-main-text {
     font-size: 48px;
@@ -63,57 +68,127 @@ img {
 }
 
 .hero-secondary-text {
-    font-size: 18px;
+    font-size: 22px;
     color: #e5e7eb;
+    font-style: italic;
 }
 
-.hero.image {
-    min-width: 570px;
-    height: 300px;
-    border: 2px solid #3882F6;
-    border-radius: 8px;
+.hero-image {
+    min-width: 600px;
+    height: 350px;
+    border-radius: 10px;
+    object-fit: cover;
+    box-shadow: 5px 5px 15px #121820;
 }
 
-.button {
-    font-size: 18px;
-    font-weight: 500;
+button {
+    font-size: 16px;
+    font-weight: 700;
     color: #F9FaF8;
+    text-transform: uppercase;
     background-color: #3882F6;
-    border: 0;
-    border-radius: 20px;
-    padding: 10px 20px;
+    border-radius: 40px;
+    padding: 12px 20px;
+    cursor: pointer;
 }
 
-.info.section {
+button.hero-button {
+    border: 2px solid #3882F6;
+ 
+}
+
+.info-section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px;
+    gap: 50px;
+    padding: 120px 250px;
+    text-align: center;
+}
+
+.info-header,
+.quote-header {
+    color: #1F2937;
+    font-size: 36px;
+    font-weight: 900;
 }
 
 .cards {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    gap: 40px;
+    gap: 60px;
 }
 
-.info.image {
+.card {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.info-image {
+    margin-bottom: 15px;
     width: 200px;
     height: 200px;
-    border: 2px solid #3882F6;
-    border-radius: 6px;
+    object-fit: cover;
 }
 
-.quote.section {
+.info-text-heading {
+    color: #1F2937;
+}
+
+.info-text {
+    color: #1F2937;
+    font-size: 18px;
+}
+
+.quote-section {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
+    padding: 100px 200px;
     background-color: #e5e7eb;
 }
 
-.quote.hero-text {
-    font-size: 26px;
+.quote-text {
+    color: #1F2937;
+    font-size: 36px;
+    font-style: italic;
+    text-align: center;
+}
+
+.coa-section {
+    justify-content: center;
+    align-items: center;
+    padding: 80px 300px;
+}
+
+.call-to-action {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    background-color: #3882F6;
+    padding: 40px;
+    border-radius: 10px;
+    color: #F9FaF8;
+}
+
+.coa-text {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.coa-header-text {
+    font-size: 22px;
+    font-weight: 900;
+}
+
+button.coa-button {
+    flex: 1 1 25%;
+    border: 2px solid #e5e7eb;
 }
 
 footer {
@@ -123,6 +198,5 @@ footer {
     background-color: #1F2937;
     padding: 20px;
     font-size: 16px;
-    font-weight: bold;
-    color: #e5e7eb;
+    color: #3882F6;
 }
